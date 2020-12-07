@@ -80,12 +80,12 @@ You can also loop through lists
 ```python
 # Most straightforward way to iterate through a list
 for name in names:
-	print(name)
+    print(name)
 
 # Using range is useful if you also need the index of the item
 for index in range(len(names)):
-	name = names[index]
-	print(name)
+    name = names[index]
+    print(index, name)
 ```
 
 ### Adding to a list
@@ -115,7 +115,7 @@ print(partial_copy_of_names) # ["Philip", "Charles"]
 ### Definition
 Tuples are very similar to lists. However, tuples cannot be modified i.e. they are immutable.
 
-```
+```python
 first_couple = ("Barack", "Michelle")
 print(first_couple) # ("Barack", "Michelle")
 first_couple[0] = "Donny" # will throw a TypeError :(
