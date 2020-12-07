@@ -45,6 +45,8 @@ for line in lines:
     print(line)
 ```
 
+[[Back to top](#table-of-contents)]
+
 ## Lists
 ### Definition
 A list is a collection of items stored in a particular order
@@ -107,6 +109,8 @@ partial_copy_of_names = names[1:3]
 print(partial_copy_of_names) # ["Philip", "Charles"]
 ```
 
+[[Back to top](#table-of-contents)]
+
 ## Tuples
 ### Definition
 Tuples are very similar to lists. However, tuples cannot be modified i.e. they are immutable.
@@ -117,5 +121,9 @@ print(first_couple) # ("Barack", "Michelle")
 first_couple[0] = "Donny" # will throw a TypeError :(
 ```
 
+[[Back to top](#table-of-contents)]
+
 ## Dictionaries
 TODO
+
+[[Back to top](#table-of-contents)]
