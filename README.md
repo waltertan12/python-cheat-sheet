@@ -113,17 +113,85 @@ print(partial_copy_of_names) # ["Philip", "Charles"]
 
 ## Tuples
 ### Definition
-Tuples are very similar to lists. However, tuples cannot be modified i.e. they are immutable.
+Tuples are very similar to lists -- they are order collections of items
+
+However, tuples cannot be modified i.e. they are immutable.
+
 
 ```python
+# define a tuple by using parenthesis
 first_couple = ("Barack", "Michelle")
 print(first_couple) # ("Barack", "Michelle")
+
+# access a tuple by using the square brackets
+print(first_couple[0]) # "Barack"
+print(first_couple[1]) # "Michelle"
+
+# loop through a tuple
+for person in first_couple:
+	print(person)
+
+# assigning a new item to the list will throw a TypeError
 first_couple[0] = "Donny" # will throw a TypeError :(
 ```
 
 [[Back to top](#table-of-contents)]
 
 ## Dictionaries
+### Definition
+Dictionaries is a collection of data that helps connect pieces of information. 
+Dictionaries accomplish this by storing information in key-value pairs.
+
+```python
+titles = {
+    "Elizabeth" => "Queen of England",
+    "Philip" => "Prince, Duke of Edinburgh",
+    "Charles" => "Prince of Wales",
+    "William" => "Duke of Cambridge",
+    "George" => "Prince of Cambridge"
+}
+```
+
+Notice how each name in the list is associated with a title.
+
+### Accessing items in a dictionary
+You can access items in a list by using a key or index
+
+```python
+# you can use square brackets
+print(titles["Elizabeth"]) # "Queen of England"
+print(titles["George"]) # "Prince of Cambridge"
+
+
+# or you can use the get() method
+print(titles.get("Charles")) # "Prince of Wales"
+
+# the get method lets you provide a fallback value if the key/index does not exist
+print(titles.get("WaLtEr", "RULER OF THE GALAXY")) # "RULER OF THE GALAXY"
+```
+
+### Adding new values
+To add new values to the dictionary, simply add more key value pairs!
+```python
+titles["Charlotte"] = "Princess of Cambridge"
+print(titles["Charlotte"]) # "Princess of Cambridge"
+```
+
+### Editing values
+To edit existing key-value pairs, reassign the key to a new value
+```python
+titles["George"] = "Great grandson of Elizabeth"
+print(titles["George"]) # "Great grandson of Elizabeth"
+```
+
+### Removing values
+To remove values, use the `del` operator on a key
+```python
+del titles["Philip"]
+print(titles.get("Philip", "Nobody here")) # "Nobody here"
+```
+
+### Looping through a dictionary
 TODO
 
 [[Back to top](#table-of-contents)]
