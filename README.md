@@ -16,6 +16,12 @@ Quick cheat sheet for basic Python operations
 - [Tuples](#tuples)
     - [Definition](#definition-2)
 - [Dictionaries](#dictionaries)
+    - [Definition](#definition-2)
+    - [Accessing items in a dictionary](#accessing-items-in-a-dictionary)
+    - [Adding new values](#adding-new-values)
+    - [Editing values](#editing-values)
+    - [Removing values](#removing-values)
+    - [Looping through a dictionary](#looping-through-a-dictionary)
 
 ## Variables
 ### Definition
@@ -142,13 +148,16 @@ first_couple[0] = "Donny" # will throw a TypeError :(
 Dictionaries is a collection of data that helps connect pieces of information. 
 Dictionaries accomplish this by storing information in key-value pairs.
 
+
+NOTE: these data structures are also called maps or hash maps 
+
 ```python
 titles = {
-    "Elizabeth" => "Queen of England",
-    "Philip" => "Prince, Duke of Edinburgh",
-    "Charles" => "Prince of Wales",
-    "William" => "Duke of Cambridge",
-    "George" => "Prince of Cambridge"
+    "Elizabeth": "Queen of England",
+    "Philip": "Prince, Duke of Edinburgh",
+    "Charles": "Prince of Wales",
+    "William": "Duke of Cambridge",
+    "George": "Prince of Cambridge"
 }
 ```
 
